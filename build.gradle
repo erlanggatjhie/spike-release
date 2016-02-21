@@ -23,6 +23,14 @@ release {
     failOnSnapshotDependencies = false
     failOnUnversionedFiles = false
     versionPropertyFile = 'version.properties'
+
+    scmAdapters = [
+            net.researchgate.release.GitAdapter
+    ]
+
+    git {
+        requireBranch = ''
+    }
 }
 
 repositories {
